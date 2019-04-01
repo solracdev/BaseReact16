@@ -3,7 +3,7 @@
 FROM node:alpine
 
 # set working directory
-RUN mkdir /usr/src/app
+RUN mkdir -p /usr/src/app
 #copy all files from current directory to docker
 COPY . /usr/src/app
 
