@@ -20,12 +20,12 @@ If you prefer build and image and run the container you can execute:
 
 then you can run your container with this command:
 
-### `docker run -it \
-###  -v ${PWD}:/usr/src/app \
-###  -v /usr/src/app/node_modules \
-###  -p 3000:3000 \
-### -e CHOKIDAR_USEPOLLING=true \
-### --rm { your image name }`
+ `docker run -it \
+  -v ${PWD}:/usr/src/app \
+  -v /usr/src/app/node_modules \
+  -p 3000:3000 \
+  -e CHOKIDAR_USEPOLLING=true \
+  --rm { your image name }`
   
 with that you'll have an new instance running with hot-reload working ( apply code changes without reload container )
 
